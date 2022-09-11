@@ -1,7 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
+import Container from './components/Container';
 
 import FirstComponent from './components/FirstComponent';
+import Fragment from './components/Fragment';
 import Hooks from './components/Hooks';
 import Images from './components/Images';
 import List from './components/List';
@@ -18,6 +20,11 @@ function App() {
       <Hooks />
       <List />
       <RenderCond x={10} y={15}/>
+      <Fragment />
+      <Container>
+          <h1>Esse é filho do container</h1>
+      </Container>
+
     </div>
   );
 }
